@@ -16,7 +16,9 @@ module.exports = React.createClass({
     Actions.getImages(this.props.params.id);
   },
   componentWillReceiveProps: function(nextProps) {
-    Actions.getImages(nextProps.params.id);
+    if(nextProps.params.id != this.props.params.id) {
+      Actions.getImages(nextProps.params.id);
+    }
   },
   render: function() {
     return <div>
