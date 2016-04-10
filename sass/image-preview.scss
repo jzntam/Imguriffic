@@ -24,4 +24,14 @@
     opacity: .5;
     color: white;
   }
+
+  .inset {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    opacity: .7;
+  }
 }
