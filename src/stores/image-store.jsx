@@ -29,7 +29,6 @@ module.exports = Reflux.createStore({
     var image = _.findWhere(this.images, { id: id });
 
     if(image) {
-      console.log(image)
       return image
     } else {
       this.getImage(id);
